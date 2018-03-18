@@ -10,7 +10,7 @@
 #------BOEFFLA SOUND 1.6.7 (by Lord Boeffla)------#
 
 #Enable Boeffla sound
-#echo 1 > /sys/class/misc/boeffla_sound/boeffla_sound
+echo 1 > /sys/class/misc/boeffla_sound/boeffla_sound
 
 #Microphone volume in-call
 #This setting allows you to control the microphones sensitivity for phone calls (only)
@@ -43,11 +43,11 @@
 
 #DAC direct
 #By switching DAC direct to on, you will bypass the output mixer in the signal path and connect the DAC directly to the headphone amplifier
-#echo 1 > sys/class/misc/boeffla_sound/dac_direct
+echo 1 > sys/class/misc/boeffla_sound/dac_direct
 
 #DAC oversampling
 #This setting changes the oversampling rate from 64 to 128 bit
-#echo 1 > /sys/class/misc/boeffla_sound/dac_oversampling
+echo 1 > /sys/class/misc/boeffla_sound/dac_oversampling
 
 #FLL tuning
 #Tunes the audio chip clock engine, to ensure the right power to your headphones and reduce distorsions and bad behaviours
@@ -81,7 +81,7 @@ echo 1250 > /sys/kernel/charge_levels/charge_level_ac
 #USB charge rate
 #This configures the charging rate when you load your phone via an USB
 #-->min:0 (off), max:1600, unit:mA, steps:1
-echo 500 > /sys/kernel/charge_levels/charge_level_usb
+echo 1000 > /sys/kernel/charge_levels/charge_level_usb
 
 #Wireless charge rate
 #This configures the charging rate when you load your phone via a wireless charging cover
